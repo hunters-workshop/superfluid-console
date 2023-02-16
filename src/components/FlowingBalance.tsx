@@ -64,7 +64,6 @@ const FlowingBalance: FC<FlowingBalanceProps> = ({
 
   //If balance in settings is 0, then show smart flowing balance
   useEffect(() => {
-    if (currentEtherDecimalPlaces !== 0) return;
     const balanceBigNumber = ethers.BigNumber.from(balance);
 
     let stopAnimation = false;
